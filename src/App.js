@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
+import React, {useEffect, useState} from 'react';
+import {getCinemas} from '../src/funcionalidades.js'
+import ElementosCinema  from '../src/ElementosCinema.js';
+import NavBarBoostrap from './NavBar.js';
+import SpinnerComponent from './SpinnerComponent.js';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 
+
+
+
 function App() {
+  const [cinemas, setCinemas] = useState([])
+
+  
+  useEffect(()=>{
+    async function fetch(){
+      setCinemas(await getCinemas())
+      
+    }
+    fetch()
+  }, [])
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='containterItems'>
+        <NavBarBoostrap></NavBarBoostrap>
+        <ElementosCinema cinemas={cinemas}></ElementosCinema>
+      </div>
+
+ 
+
+
   );
 }
 
