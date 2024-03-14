@@ -1,9 +1,9 @@
 
 import React, {useEffect, useState} from 'react';
 import {getCinemas} from '../src/funcionalidades.js'
-import ElementosCinema  from '../src/ElementosCinema.js';
-import NavBarBoostrap from './NavBar.js';
-import SpinnerComponent from './SpinnerComponent.js';
+import ElementosCinema  from './components/ElementosCinema.js';
+import NavBarBoostrap from './components/NavBar.js';
+import SpinnerComponent from './components/SpinnerComponent.js';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 

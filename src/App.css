@@ -95,6 +95,37 @@ nav{
 
 .spinnerComponent{
   z-index: 100;
-  margin: 5px;
+  margin: 15em;
+  
+}
+.spinnerCircle{
+  margin: 3px;
+}
+.navBarBoostrap{
+  position:relative;
 }
 
+.navBarBoostrap .containerBrand{
+  position: absolute;
+  left: 20px;
+}
+.navBarBoostrap .containerProfileSearch{
+  position: absolute;
+  right: 20px;
+}
+
+
+.navBarBoostrap a{
+  margin: 20px;
+}
+
+
+
+/*Responsive */
+@media (max-width:550px) {
+
+  .navBarBoostrap a{
+    display: none;
+  }
+      
+}

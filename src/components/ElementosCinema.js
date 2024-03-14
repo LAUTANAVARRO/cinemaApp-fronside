@@ -1,17 +1,16 @@
-//iterar cada elemento del array 'cinemas' y mostrarlo
-import killua from './images/killua.jpg'
-import SpinnerComponent from './SpinnerComponent'
+import SpinnerComponent from '../components/SpinnerComponent'
 
 
 export default (props)=>{
-//Renderizado condicional, el spinner se muestra si el array está vacío, sino se muestra la lista de items
-if(props.cinemas.length<=0){
-   return(
-      <SpinnerComponent></SpinnerComponent>
-   )
-}
-   
-   return( 
+   //Renderizado condicional, el spinner se muestra si el array está vacío, sino se muestra la lista de componentes. 
+   if(props.cinemas.length<=0){
+      return(
+         <SpinnerComponent></SpinnerComponent>
+         )
+      }
+      
+      //iterar cada elemento del array 'cinemas' y mostrarlo
+      return( 
       props.cinemas.map((cinema)=>{
          
       return(
