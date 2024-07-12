@@ -5,8 +5,8 @@ export default function SpinnerComponent  (){
 
 
 return(    
-<button class="btn btn-dark spinnerComponent" type="button" disabled>
-  <span class="spinner-border spinner-border-sm spinnerCircle" role="status" aria-hidden="true"></span>
+<button className="btn btn-dark spinnerComponent" type="button" disabled>
+  <span className="spinner-border spinner-border-sm spinnerCircle" role="status" aria-hidden="true"></span>
   Loading...
 </button>
 )

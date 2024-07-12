@@ -1,9 +1,6 @@
 //Componente navbar Responsive
 
 const NavBarBoostrap = ()=>{
-
-
-
    //Original Navbar 
    // hacer CSS para agregar (o no) display al elemento nav.
 
@@ -12,11 +9,10 @@ const NavBarBoostrap = ()=>{
     /* hacer CSS para agregar (o no) display al elemento nav.*/
     return(
     <>
-
-        <nav class="navbar navbar-dark bg-dark d-none">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-dark bg-dark d-none">
+            <div className="container-fluid">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
             </div>
         </nav> 
